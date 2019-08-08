@@ -5,7 +5,7 @@ token = "840565652:AAF3aW49Bq91tYrKKmgnycRtpB76cXG9_eo"
 bot  = telebot.TeleBot(token)
 
 #klaviatura
-@bot.message_handler(content_types=["text"])
+@bot.message_handler(commands=["start"])
 def any_msg(message):
     keybardmain = types.InlineKeyboardMarkup(row_width=4)
     fist_button = types.InlineKeyboardButton(text="Поступление денег➡️", callback_data = "first")
