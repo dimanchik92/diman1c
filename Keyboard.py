@@ -53,5 +53,5 @@ def callback_inline(call):
         bot.edit_message_text( chat_id=call.message.chat.id, message_id=call.message.message_id,text="предеущая кнопка", reply_markup=keyboard3)
 
 
-if __name__== "__main__":
-        bot.polling(none_stop=True)
+#if __name__== "__main__":
+       # bot.polling(none_stop=True)
